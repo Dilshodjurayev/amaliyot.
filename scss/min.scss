@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/H_w.jpg);
+}
+
+.box {
+  height: 55px;
+  width: 55px;
+  background-image: url(../img/world.jpg);
+  background-size: cover;
+  box-shadow: 3px 3px 20px blue;
+  border: 1px solid dodgerblue;
+  animation-name: animetion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin-top: 64px;
+  margin-left: 50px;
+}
+
+@keyframes animetion {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(230px, 0);
+  }
+  20% {
+    transform: translate(230px, 250px);
+  }
+  30% {
+    transform: translate(780px, 250px);
+  }
+  40% {
+    transform: translate(780px, 370px);
+  }
+  50% {
+    transform: translate(470px, 370px);
+  }
+  60% {
+    transform: translate(470px, 320px);
+  }
+  70% {
+    transform: translate(210px, 320px);
+  }
+  80% {
+    transform: translate(60px, 220px);
+  }
+  90% {
+    transform: translate(8px, 220px);
+  }
+  100% {
+    transform: translate(0, 3px);
+  }
+}
